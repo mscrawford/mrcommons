@@ -185,5 +185,7 @@ calcMACCsN2O <- function(sector = "all", source = "ImageMacc") {  # nolint: obje
     w <- mbind(w, x)
   }
 
+  n2o <- toolTimeSpline(n2o, peggedYears = c(2025, 2050, 2100))
+
   return(list(x = n2o, weight = w, unit = unit, description = description))
 }

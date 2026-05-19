@@ -206,5 +206,7 @@ calcMACCsCH4 <- function(sector = "all", source = "ImageMacc" # nolint: object_n
     w <- mbind(w, x)
   }
 
+  ch4 <- toolTimeSpline(ch4, peggedYears = c(2025, 2050, 2100))
+  
   return(list(x = ch4, weight = w, unit = unit, description = description))
 }

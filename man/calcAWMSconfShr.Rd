@@ -4,10 +4,7 @@
 \alias{calcAWMSconfShr}
 \title{calcAWMSconfShr}
 \usage{
-calcAWMSconfShr(rev = 0.1)
-}
-\arguments{
-\item{rev}{revision number of madrat run}
+calcAWMSconfShr()
 }
 \value{
 List of magpie objects with results on country level, weight on country level, unit and description.
